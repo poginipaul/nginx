@@ -24,5 +24,3 @@ jobs:
         
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag paul-nginx:$(date +%m-%d-%y)
-    - name: Push Docker Image
-      run: docker push woodie03/test-nginx
