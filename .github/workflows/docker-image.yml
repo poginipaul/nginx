@@ -17,6 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag paul-nginx:$(date +%m-%d-%y)
     - name: Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: woodie03/test-nginx
         registry: docker.io
