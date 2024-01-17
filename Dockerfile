@@ -1,5 +1,7 @@
-FROM ubuntu:20.04
+FROM nginx:latest
 
-RUN apt-get -y update
+RUN apt-get update -y
 
 RUN apt-get -y install nginx
+
+CMD ['nginx', '-g', 'daemon-off']
