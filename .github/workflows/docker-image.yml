@@ -21,4 +21,4 @@ jobs:
         image: woodie03/test-nginx
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrest.DOCKER_PASSWORD }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
